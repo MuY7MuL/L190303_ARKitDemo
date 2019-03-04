@@ -1,8 +1,8 @@
 //
-//  ShowDaeViewController.h
+//  ShowScnViewController.h
 //  L190301_ARKitDemo
 //
-//  Created by Mumu on 2019/3/1.
+//  Created by Mumu on 2019/3/4.
 //  Copyright © 2019 LinYan. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ShowDaeViewController : UIViewController
+@interface ShowScnViewController : UIViewController
 
 @end
 

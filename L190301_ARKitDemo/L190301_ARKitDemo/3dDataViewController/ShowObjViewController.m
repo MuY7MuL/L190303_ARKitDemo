@@ -6,18 +6,18 @@
 //  Copyright © 2019 LinYan. All rights reserved.
 //
 
-#import "ShowDaeViewController.h"
+#import "ShowObjViewController.h"
 #import <ARKit/ARKit.h>
 #import <SceneKit/SceneKit.h>
 
 
-@interface ShowDaeViewController () <ARSCNViewDelegate>
+@interface ShowObjViewController () <ARSCNViewDelegate>
  @property (strong, nonatomic) IBOutlet ARSCNView *sceneView;
 
 
 @end
 
-@implementation ShowDaeViewController
+@implementation ShowObjViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

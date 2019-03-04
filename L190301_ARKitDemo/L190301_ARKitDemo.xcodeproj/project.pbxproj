@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2860FC992229198C00E23F4E /* Stick_Figure_by_Swp.obj in Resources */ = {isa = PBXBuildFile; fileRef = 2860FC982229198C00E23F4E /* Stick_Figure_by_Swp.obj */; };
 		2860FC9C22291BEC00E23F4E /* DaeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860FC9B22291BEC00E23F4E /* DaeViewController.m */; };
-		2860FCA022291CB700E23F4E /* ShowDaeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860FC9F22291CB700E23F4E /* ShowDaeViewController.m */; };
+		2860FCA022291CB700E23F4E /* ShowObjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860FC9F22291CB700E23F4E /* ShowObjViewController.m */; };
 		2860FCA3222924EF00E23F4E /* TestSCNNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860FCA2222924EF00E23F4E /* TestSCNNode.m */; };
 		28940D192228CC5500B2256F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28940D182228CC5500B2256F /* AppDelegate.m */; };
 		28940D1B2228CC5500B2256F /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 28940D1A2228CC5500B2256F /* art.scnassets */; };
@@ -20,6 +20,7 @@
 		28940D292228CC5800B2256F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28940D282228CC5800B2256F /* main.m */; };
 		28940D332228CC5800B2256F /* L190301_ARKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28940D322228CC5800B2256F /* L190301_ARKitDemoTests.m */; };
 		28940D3E2228CC5800B2256F /* L190301_ARKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28940D3D2228CC5800B2256F /* L190301_ARKitDemoUITests.m */; };
+		28C20D9B222CC54B00C66BD8 /* ShowScnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C20D9A222CC54B00C66BD8 /* ShowScnViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +44,8 @@
 		2860FC982229198C00E23F4E /* Stick_Figure_by_Swp.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stick_Figure_by_Swp.obj; sourceTree = "<group>"; };
 		2860FC9A22291BEC00E23F4E /* DaeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DaeViewController.h; sourceTree = "<group>"; };
 		2860FC9B22291BEC00E23F4E /* DaeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaeViewController.m; sourceTree = "<group>"; };
-		2860FC9E22291CB700E23F4E /* ShowDaeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowDaeViewController.h; sourceTree = "<group>"; };
-		2860FC9F22291CB700E23F4E /* ShowDaeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowDaeViewController.m; sourceTree = "<group>"; };
+		2860FC9E22291CB700E23F4E /* ShowObjViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowObjViewController.h; sourceTree = "<group>"; };
+		2860FC9F22291CB700E23F4E /* ShowObjViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowObjViewController.m; sourceTree = "<group>"; };
 		2860FCA1222924EF00E23F4E /* TestSCNNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSCNNode.h; sourceTree = "<group>"; };
 		2860FCA2222924EF00E23F4E /* TestSCNNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSCNNode.m; sourceTree = "<group>"; };
 		28940D142228CC5500B2256F /* L190301_ARKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L190301_ARKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +65,8 @@
 		28940D392228CC5800B2256F /* L190301_ARKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = L190301_ARKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28940D3D2228CC5800B2256F /* L190301_ARKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = L190301_ARKitDemoUITests.m; sourceTree = "<group>"; };
 		28940D3F2228CC5800B2256F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28C20D99222CC54B00C66BD8 /* ShowScnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowScnViewController.h; sourceTree = "<group>"; };
+		28C20D9A222CC54B00C66BD8 /* ShowScnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowScnViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +97,12 @@
 		2860FC9D22291C8C00E23F4E /* 3dDataViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2860FC9E22291CB700E23F4E /* ShowDaeViewController.h */,
-				2860FC9F22291CB700E23F4E /* ShowDaeViewController.m */,
+				2860FC9E22291CB700E23F4E /* ShowObjViewController.h */,
+				2860FC9F22291CB700E23F4E /* ShowObjViewController.m */,
 				2860FCA1222924EF00E23F4E /* TestSCNNode.h */,
 				2860FCA2222924EF00E23F4E /* TestSCNNode.m */,
+				28C20D99222CC54B00C66BD8 /* ShowScnViewController.h */,
+				28C20D9A222CC54B00C66BD8 /* ShowScnViewController.m */,
 			);
 			path = 3dDataViewController;
 			sourceTree = "<group>";
@@ -305,8 +310,9 @@
 				28940D292228CC5800B2256F /* main.m in Sources */,
 				2860FCA3222924EF00E23F4E /* TestSCNNode.m in Sources */,
 				28940D192228CC5500B2256F /* AppDelegate.m in Sources */,
-				2860FCA022291CB700E23F4E /* ShowDaeViewController.m in Sources */,
+				2860FCA022291CB700E23F4E /* ShowObjViewController.m in Sources */,
 				2860FC9C22291BEC00E23F4E /* DaeViewController.m in Sources */,
+				28C20D9B222CC54B00C66BD8 /* ShowScnViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

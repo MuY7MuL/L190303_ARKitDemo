@@ -65,9 +65,17 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihT-gL-bBG">
                                 <rect key="frame" x="123" y="107" width="129" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="dae文件显示"/>
+                                <state key="normal" title="obj文件显示"/>
                                 <connections>
                                     <segue destination="QTe-hG-O7H" kind="modal" id="mD1-ag-AY8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZn-Kj-Qep">
+                                <rect key="frame" x="133" y="163" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="obj转scn显示"/>
+                                <connections>
+                                    <segue destination="TP2-xs-14T" kind="modal" id="2jB-cx-kuj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -78,12 +86,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAU-ca-UZN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="-72"/>
+            <point key="canvasLocation" x="812" y="-72.413793103448285"/>
         </scene>
-        <!--Show Dae View Controller-->
+        <!--Show Obj View Controller-->
         <scene sceneID="taD-Ul-cYR">
             <objects>
-                <viewController id="QTe-hG-O7H" customClass="ShowDaeViewController" sceneMemberID="viewController">
+                <viewController id="QTe-hG-O7H" customClass="ShowObjViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bBg-9Y-vKZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,7 +115,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1T-sx-a7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1649" y="-72"/>
+            <point key="canvasLocation" x="1654" y="-660"/>
+        </scene>
+        <!--Show Scn View Controller-->
+        <scene sceneID="by0-im-bF2">
+            <objects>
+                <viewController id="TP2-xs-14T" customClass="ShowScnViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q7r-Yd-Fmj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Um1-N9-6hD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Um1-N9-6hD" firstAttribute="bottom" secondItem="4lp-Qe-poz" secondAttribute="bottom" id="334-6l-vvF"/>
+                            <constraint firstItem="Um1-N9-6hD" firstAttribute="leading" secondItem="Q7r-Yd-Fmj" secondAttribute="leading" id="COe-F6-pCL"/>
+                            <constraint firstAttribute="trailing" secondItem="Um1-N9-6hD" secondAttribute="trailing" id="SxT-z3-Xu9"/>
+                            <constraint firstItem="Um1-N9-6hD" firstAttribute="top" secondItem="Q7r-Yd-Fmj" secondAttribute="top" id="YeQ-Dy-Ual"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4lp-Qe-poz"/>
+                    </view>
+                    <connections>
+                        <outlet property="scnSceneView" destination="Um1-N9-6hD" id="rjr-rT-Lpn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxV-ZA-AhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1654" y="12"/>
         </scene>
     </scenes>
 </document>
